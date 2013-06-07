@@ -1,0 +1,17 @@
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mystuff {
+    max-width: 980px;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.mystuff ul {
+    list-style-type: none;
+}
