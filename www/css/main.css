@@ -2,16 +2,31 @@ body {
     font-family: Helvetica;
 }
 
-h1 {
+header {
     text-align: center;
 }
+header hr {
+    max-width: 750px;
+
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
 
 .mystuff {
-    max-width: 980px;
+    max-width: 750px;
     margin: 0 auto;
     line-height: 25px;
 }
-
 .mystuff ul {
     list-style-type: none;
+}
+@media (min-width: 768px) {
+    .mystuff {
+        padding-top: 50px;
+    }
 }
