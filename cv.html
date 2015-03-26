@@ -15,8 +15,8 @@
   }
   .me {
     margin-top: 20px;
-    font-size: 20px;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
   }
   h1 {
     text-align: center;
@@ -44,8 +44,15 @@
 <body>
   <main>
     <header class="me">
-      Vyacheslav Matyukhin<br>
-      Moscow, Russia
+      <div class="me-name">
+        Vyacheslav Matyukhin<br>
+        Moscow, Russia
+      </div>
+      <div class="me-accounts">
+        <a href="mailto:berekuk.ru">me@berekuk.ru</a><br>
+        <img src="https://assets-cdn.github.com/favicon.ico" width="16" height="16">
+        <a href="https://github.com/berekuk">berekuk</a>
+      </div>
     </header>
     <section class="top-section">
       <h1>Education</h1>
