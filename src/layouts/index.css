@@ -1,0 +1,21 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  line-height: 25px;
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    padding-top: 50px;
+  }
+}

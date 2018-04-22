@@ -1,4 +1,0 @@
-[project]
-name = berekuk.ru
-[servers.production]
-target = rsync://berekuk-srv@berekuk.ru/srv/berekuk/berekuk.ru
