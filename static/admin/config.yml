@@ -1,14 +1,16 @@
 backend:
-  name: test-repo
+  name: github
+  repo: berekuk/berekuk.ru
 
-media_folder: static/assets
+media_folder: src/images
 
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/markdown-pages/blog
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
+      - { name: path, label: Path }
       - { name: title, label: Title }
