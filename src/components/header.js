@@ -33,17 +33,24 @@ const NavList = styled.ul`
   margin: 0;
   padding: 0;
 
+  > li {
+    margin-bottom: 0;
+  }
+
   & > * + * {
-    margin-left: 10px;
+  margin-left: 10px;
   }
 
   a {
-    text-decoration: none;
+  text-decoration: none;
+  padding: 2px 4px;
+  font-weight: bold;
+  color: #666;
   }
 
   a:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
   }
 `;
 
@@ -51,6 +58,7 @@ const PrettyHr = styled.hr`
   max-width: 750px;
 
   border: 0;
+  margin: 0 auto;
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 `;
