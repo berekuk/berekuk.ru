@@ -25,21 +25,52 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
+
   const pageTemplate = path.resolve('src/templates/pageTemplate.js');
+
+  graphql(`
+    {
+      pages: allMarkdownRemark(filter: {fields: {type: {eq: "pages"}}}) {
+        edges {
+          node {
+            html
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors);
+    }
+
+    const pages = result.data.pages.edges;
+
+    pages.forEach(({ node }) => {
+      const path = node.frontmatter.path;
+
+      createPage({
+        path: path,
+        component: pageTemplate,
+      });
+    });
+  });
+
   const blogTemplate = path.resolve('src/templates/blogTemplate.js');
 
   return graphql(`
     {
-      pages: allMarkdownRemark {
+      posts: allMarkdownRemark(
+        filter: {fields: {type: {eq: "blog"}}},
+        sort: { order: ASC, fields: [frontmatter___date] }
+      ) {
         edges {
           node {
             html
-            fields {
-              type
-            }
             frontmatter {
               path
-              link
               title
             }
           }
@@ -51,7 +82,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.pages.edges.forEach(({ node }) => {
+    const posts = result.data.posts.edges;
+    posts.forEach(({ node }, index) => {
       let path = node.frontmatter.path;
       if (!path) {
         path = node.frontmatter.link.replace(
@@ -61,15 +93,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         path = path.replace(RegExp('/$'), '');
       }
 
-      const template = {
-        blog: blogTemplate,
-        pages: pageTemplate,
-      }[node.fields.type];
-
       createPage({
         path: path,
-        component: template,
-        context: {}, // additional data can be passed via context
+        component: blogTemplate,
+        context: {
+          prev: index === 0 ? undefined : posts[index - 1].node.frontmatter,
+          next: index === posts.length - 1 ? undefined : posts[index + 1].node.frontmatter,
+        },
       });
     });
   });
