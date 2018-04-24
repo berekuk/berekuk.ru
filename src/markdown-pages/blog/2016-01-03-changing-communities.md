@@ -1,13 +1,9 @@
 ---
-author: berekuk
-comments: true
-date: 2016-01-01 20:18:16+00:00
-layout: post
-link: https://blog.berekuk.ru/2016/01/01/%d0%9a%d0%b0%d0%ba-%d0%bc%d0%b5%d0%bd%d1%8f%d1%82%d1%8c-%d0%bb%d1%8e%d0%b4%d0%b5%d0%b9-%d0%b8-%d1%81%d0%be%d0%be%d0%b1%d1%89%d0%b5%d1%81%d1%82%d0%b2%d0%b0/
+date: 2016-01-01T20:18:16.000Z
 path: /blog/2016/01/01/changing-communities/
-slug: '%d0%9a%d0%b0%d0%ba-%d0%bc%d0%b5%d0%bd%d1%8f%d1%82%d1%8c-%d0%bb%d1%8e%d0%b4%d0%b5%d0%b9-%d0%b8-%d1%81%d0%be%d0%be%d0%b1%d1%89%d0%b5%d1%81%d1%82%d0%b2%d0%b0'
 title: Как менять людей и сообщества
-wordpress_id: 64
+categories:
+  - lesswrong
 ---
 
 _Эпистемический статус ([via](https://srconstantin.wordpress.com/)): конкретные предложения по улучшению LW-сообщества, про которые я пока что не стараюсь детально обосновать, почему я считаю, что они работают и полезны._
