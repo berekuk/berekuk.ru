@@ -15,3 +15,4 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: categories, label: Categories, widget: list }
