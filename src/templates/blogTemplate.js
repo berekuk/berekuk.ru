@@ -27,8 +27,9 @@ export default function Template({ data, pathContext }) {
       <Time>{frontmatter.date}</Time>
       <div dangerouslySetInnerHTML={{ __html: html }} />
 
+      <hr />
       <PostFooter>
-        {frontmatter.categories}
+        {frontmatter.categories && frontmatter.categories.map(e => `#${e}`).join(', ')}
         <FooterLinks>
           {prev && <Link to={prev.path}>&larr; {prev.title}</Link>}
           {next && <Link to={next.path}>{next.title} &rarr;</Link>}
