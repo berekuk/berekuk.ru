@@ -1,13 +1,9 @@
 ---
-author: berekuk
-comments: true
-date: 2016-01-03 01:01:44+00:00
-layout: post
-link: https://blog.berekuk.ru/2016/01/03/%d0%91%d0%b5%d1%81%d0%bf%d0%be%d0%bb%d0%b5%d0%b7%d0%bd%d1%8b%d0%b5-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f/
+date: 2016-01-03T01:01:44.000Z
 path: /blog/2016/01/03/useless-definitions/
-slug: '%d0%91%d0%b5%d1%81%d0%bf%d0%be%d0%bb%d0%b5%d0%b7%d0%bd%d1%8b%d0%b5-%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f'
 title: Бесполезные определения
-wordpress_id: 70
+categories:
+  - rationality
 ---
 
 В vk-сообществе ["Рационалист"](https://vk.com/irrefutable) был [опрос про уровень амбиций](https://vk.com/wall-45153813_30446), с вариантами "Просто быть счастливым", "Стать миллионером", "Быть бессмертным", и т.п.
