@@ -16,3 +16,10 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: categories, label: Categories, widget: list }
+  - name: pages
+    label: Pages
+    folder: src/markdown-pages/pages
+    slug: "{{slug}}"
+    fields:
+      - { name: path, label: Path }
+      - { name: body, label: Body, widget: markdown }
