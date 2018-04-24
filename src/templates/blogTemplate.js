@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import Time from '../components/time';
-
+import Disqus from 'disqus-react';
 import styled from 'styled-components';
+
+import Time from '../components/time';
 
 const PostFooter = styled.footer`
   font-size: 0.8em;
@@ -20,6 +21,12 @@ export default function Template({ data, pathContext }) {
   const { frontmatter, html } = markdownRemark;
   const { prev, next } = pathContext;
 
+  const disqusConfig = {
+    url: `${data.site.siteMetadata.siteUrl}/${frontmatter.path}`,
+    identifier: frontmatter.path,
+    title: frontmatter.title,
+  }
+
   return (
     <div>
       {frontmatter.title && <h1>{frontmatter.title}</h1>}
@@ -34,12 +41,19 @@ export default function Template({ data, pathContext }) {
           {next && <Link to={next.path}>{next.title} &rarr;</Link>}
         </FooterLinks>
       </PostFooter>
+
+      <Disqus.DiscussionEmbed shortname="berekuk" config={disqusConfig} />
     </div>
   );
 }
 
 export const pageQuery = graphql`
   query BlogByPath($path: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
