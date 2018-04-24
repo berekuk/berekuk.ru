@@ -15,7 +15,9 @@ const Layout = ({ children, data }) => {
           { name: 'description', content: metadata.description },
           { name: 'keywords', content: metadata.keywords },
         ]}
-      />
+      >
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+      </Helmet>
       <Header siteTitle={metadata.title} />
       <div
         className="page-container"

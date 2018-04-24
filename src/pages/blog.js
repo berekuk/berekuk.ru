@@ -12,8 +12,12 @@ export default function Index({ data }) {
       <div style={{color: 'gray' }}>
         <p>
           Новая версия блога (которую вы видите ниже) на движке Gatsby.js пока в разработке. Старая версия блога — на <a href="https://blog.berekuk.ru">blog.berekuk.ru</a>.
-        </p><p>
+        </p>
+        <p>
           TODO: перенести комментарии, <s>перенести теги</s>, настроить редиректы, перенести картинки, <s>допилить стили</s>, <s>сделать RSS</s>.
+        </p>
+        <p>
+          <em><Link to="/rss.xml">RSS</Link></em>
         </p>
       </div>
       <div className="blog-posts">
