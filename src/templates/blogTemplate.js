@@ -19,7 +19,6 @@ export default function Template({ data, pathContext }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const { prev, next } = pathContext;
-  console.log(pathContext);
 
   return (
     <div>

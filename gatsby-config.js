@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Вячеслав Матюхин',
+    siteUrl: 'https://berekuk.ru',
+    description: 'Вячеслав Матюхин. Прикладная рациональность: блог, коучинг, движение lesswrong.ru.',
+    keywords: 'lesswrong, рациональность, кочерга, коучинг',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -34,5 +37,60 @@ module.exports = {
     },
     'gatsby-plugin-typography',
     'gatsby-plugin-catch-links',
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return {
+                  description: edge.node.excerpt,
+                  title: edge.node.frontmatter.title,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                };
+              });
+            },
+            query: `
+            {
+              allMarkdownRemark(
+                limit: 20,
+                filter: { fields: { type: { eq: "blog" } } },
+                sort: { order: DESC, fields: [frontmatter___date] }
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    frontmatter {
+                      path
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            }
+            `,
+            output: '/rss.xml',
+          },
+        ],
+      },
+    },
   ],
 };
