@@ -1,18 +1,9 @@
 ---
-author: berekuk
-comments: true
-date: 2016-02-10 16:52:35+00:00
-layout: post
-link: https://blog.berekuk.ru/2016/02/10/read-communities-write-communities/
+date: 2016-02-10T16:52:35.000Z
 path: /blog/2016/02/10/read-communities-write-communities/
-slug: read-communities-write-communities
 title: Сообщества читающие и пишущие
-wordpress_id: 83
-categories:
-- lesswrong
 ---
-
-_(Эпистемический статус: ещё одна речь про то, как англоязычный LW лучше русскоязычного, и что с этим делать. Покрывает темы, которые занимают существенную часть моих мыслей в последнее время.)_
+_(Эпистемический статус: ещё одна речь про то, как англоязычный LW лучше русскоязычного, и что с этим делать. Покрывает темы, которые занимают существенную часть моих мыслей в последнее время)._
 
 **I.**
 
@@ -20,29 +11,15 @@ _(Эпистемический статус: ещё одна речь про т�
 
 Read-mostly communities, читающие сообщества:
 
-
-
-	
-  * собираются вокруг общего интереса, часто медийного (например: Star Trek)
-
-	
-  * создают производный контент (косплей, фанфики)
-
-	
-  * имеют слабое влияние на источник своего интереса
-
+* собираются вокруг общего интереса, часто медийного (например: Star Trek)
+* создают производный контент (косплей, фанфики)
+* имеют слабое влияние на источник своего интереса
 
 Write-centered communities, пишущие сообщества:
 
-	
-  * вместо того, чтобы _любить что-то вместе_, они _создают что-то вместе_
-
-	
-  * намного больше кооперируются
-
-	
-  * продукт, на котором фокусируется общий интерес, производится самим сообществом
-
+* вместо того, чтобы _любить что-то вместе_, они _создают что-то вместе_
+* намного больше кооперируются
+* продукт, на котором фокусируется общий интерес, производится самим сообществом
 
 Например: Ubuntu. Например: любые другие open source сообщества. Например (по крайней мере в лучшие его годы): [lesswrong.com](http://lesswrong.com).
 
@@ -66,31 +43,13 @@ _(Если вы не читали два поста по ссылкам, вам 
 
 Эта цитата так релевантна проблеме, на которую я пытаюсь указать, что я приведу её целиком:
 
+```
+My huge mistake was that I—as I saw it—tried to speak plainly about the stupidity of what appeared to me to be stupid ideas. I did try to avoid the fallacy known as Bulverism, which is where you open your discussion by talking about how stupid people are for believing something; I would always discuss the issue first, and only afterwards say, “And so this is stupid.” But in 2009 it was an open question in my mind whether it might be important to have some people around who expressed contempt for homeopathy. I thought, and still do think, that there is an unfortunate problem wherein treating ideas courteously is processed by many people on some level as “Nothing bad will happen to me if I say I believe this; I won’t lose status if I say I believe in homeopathy,” and that derisive laughter by comedians can help people wake up from the dream.
 
+Today I would write more courteously, I think. The discourtesy did serve a function, and I think there were people who were helped by reading it; but I now take more seriously the risk of building communities where the normal and expected reaction to low-status outsider views is open mockery and contempt.
 
-
-
-
-
-
-
-
-    
-    My huge mistake was that I—as I saw it—tried to speak plainly about the stupidity of what appeared to me to be stupid ideas. I did try to avoid the fallacy known as Bulverism, which is where you open your discussion by talking about how stupid people are for believing something; I would always discuss the issue first, and only afterwards say, “And so this is stupid.” But in 2009 it was an open question in my mind whether it might be important to have some people around who expressed contempt for homeopathy. I thought, and still do think, that there is an unfortunate problem wherein treating ideas courteously is processed by many people on some level as “Nothing bad will happen to me if I say I believe this; I won’t lose status if I say I believe in homeopathy,” and that derisive laughter by comedians can help people wake up from the dream.
-    
-    Today I would write more courteously, I think. The discourtesy did serve a function, and I think there were people who were helped by reading it; but I now take more seriously the risk of building communities where the normal and expected reaction to low-status outsider views is open mockery and contempt.
-    
-    Despite my mistake, I am happy to say that my readership has so far been amazingly good about not using my rhetoric as an excuse to bully or belittle others. (I want to single out Scott Alexander in particular here, who is a nicer person than I am and an increasingly amazing writer on these topics, and may deserve part of the credit for making the culture of Less Wrong a healthy one.)
-
-
-
-
-
-
-
-
-
-
+Despite my mistake, I am happy to say that my readership has so far been amazingly good about not using my rhetoric as an excuse to bully or belittle others. (I want to single out Scott Alexander in particular here, who is a nicer person than I am and an increasingly amazing writer on these topics, and may deserve part of the credit for making the culture of Less Wrong a healthy one.)
+```
 
 _(Из предисловия Юдковского к [Rationality: From AI to Zombies](https://intelligence.org/rationality-ai-zombies/).)_
 
@@ -102,7 +61,7 @@ Lesswrong.ru пытался стать пишущим сообществом, н
 
 1) Формат форума способствует вбросам в виде вопросов, особенно — провокационных.
 
-2) Канон в виде цепочек способствует подражанию стиля автора, которым каждый (точнее, многие) пытается рассказать остальным, _в чём же именно они неправы_. Так, чтобы это наиболее походило на канон и считывалось как высокостатусое. Так, чтобы это было наиболее убедительно. Так, чтобы это максимально сигналило превосходство.
+2. Канон в виде цепочек способствует подражанию стиля автора, которым каждый (точнее, многие) пытается рассказать остальным, _в чём же именно они неправы_. Так, чтобы это наиболее походило на канон и считывалось как высокостатусое. Так, чтобы это было наиболее убедительно. Так, чтобы это максимально сигналило превосходство.
 
 Сложно кооперироваться, когда люди оптимизируют сигналинг, а не внешнюю цель. А где взять внешнюю цель, если канон так централен, и выглядит заведомо круче всего нового, что мы можем написать? Те, кто хотят больше рациональности, молча читают архивы lesswrong.com. Общаются — остальные.
 
@@ -112,26 +71,12 @@ Lesswrong.ru пытался стать пишущим сообществом, н
 
 Что делать? Мой текущий ответ состоит из нескольких частей:
 
-
-
-	
-  * всё то, что я перечислял в посте про [перемены в сообществах](http://blog.berekuk.ru/2016/01/01/%D0%9A%D0%B0%D0%BA-%D0%BC%D0%B5%D0%BD%D1%8F%D1%82%D1%8C-%D0%BB%D1%8E%D0%B4%D0%B5%D0%B9-%D0%B8-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0/): механизмы дешёвой обратной связи, модерация, и улучшение культуры через тексты и мемы
-
-	
-  * [LessWrong.ru 2.0](https://lesswrong-ru.hackpad.com/-LW.ru-S1jiyqL42o3), который сместит акценты и приоритеты с переводов на прочую деятельность и общение
-
-	
-  * [движение эффективного альтруизма](https://www.facebook.com/events/568572009967301/), которое даст людям внешние цели, а не только повод для общения
-
-	
-  * вообще, [наведение порядка в онлайне](https://lesswrong-ru.hackpad.com/-order--PGURvN91nbW) и построение деятельности вокруг [проектов](https://lesswrong-ru.hackpad.com/ep/group/A36yl7UPHwr)
-
-	
-  * поощять ведение блогов участниками сообщества
-
+* всё то, что я перечислял в посте про [перемены в сообществах](http://blog.berekuk.ru/2016/01/01/%D0%9A%D0%B0%D0%BA-%D0%BC%D0%B5%D0%BD%D1%8F%D1%82%D1%8C-%D0%BB%D1%8E%D0%B4%D0%B5%D0%B9-%D0%B8-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0/): механизмы дешёвой обратной связи, модерация, и улучшение культуры через тексты и мемы
+* [LessWrong.ru 2.0](https://lesswrong-ru.hackpad.com/-LW.ru-S1jiyqL42o3), который сместит акценты и приоритеты с переводов на прочую деятельность и общение
+* [движение эффективного альтруизма](https://www.facebook.com/events/568572009967301/), которое даст людям внешние цели, а не только повод для общения
+* вообще, [наведение порядка в онлайне](https://lesswrong-ru.hackpad.com/-order--PGURvN91nbW) и построение деятельности вокруг [проектов](https://lesswrong-ru.hackpad.com/ep/group/A36yl7UPHwr)
+* поощять ведение блогов участниками сообщества
 
 Подход к реализации большинства из них на данный момент мне в целом понятен (кроме последнего – хотя у меня есть [одна идея](http://www.enlightenedperl.org/ironman.html)), но до воплощения в реальность всех этих пунктов мне сложно оценить ценность каждого из них по отдельности.
 
 И ещё у меня пока нет понятных метрик, чтобы измерить ни ориентацию на создание нового, ни дружелюбие. Надеюсь, что прочитаю [How to Measure Anything](http://lesswrong.com/lw/i8n/how_to_measure_anything/) в скором времени, и пойму, как к этому подойти более системно.
-
-
