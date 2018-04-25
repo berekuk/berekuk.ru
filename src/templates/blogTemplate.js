@@ -25,15 +25,14 @@ export default function Template({ data, pathContext }) {
   const metadata = data.site.siteMetadata;
 
   const disqusConfig = {
-    url: `${data.site.siteMetadata.siteUrl}/${frontmatter.path}`,
+    url: `${metadata.siteUrl}/${frontmatter.path}`,
     identifier: frontmatter.path,
-    title: frontmatter.title,
   }
 
   return (
     <div>
-      {frontmatter.title && <h1>{frontmatter.title}</h1>}
       <Helmet title={`${frontmatter.title} | ${metadata.title}`} />
+      <h1>{frontmatter.title}</h1>
       <Time>{frontmatter.date}</Time>
       <div dangerouslySetInnerHTML={{ __html: html }} />
 
@@ -56,6 +55,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
