@@ -83,7 +83,7 @@ _(Выкладки ниже рассчитаны на риски при ваги
 
 Почему? Потому что риски заразиться при анальном сексе в десятки раз выше для принимающей стороны и в разы выше для выдающей, чем при вагинальном:
 
-![hiv-rates](/src/images/sex-incidence-and-risks.png)
+[![hiv-rates](../../images/sex-incidence-and-risks.png)](https://srconstantin.wordpress.com/2015/04/30/std-statistics/)
 
 Ну и культурные отличия тоже влияют.
 

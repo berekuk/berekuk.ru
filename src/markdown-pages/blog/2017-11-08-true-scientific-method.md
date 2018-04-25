@@ -23,7 +23,7 @@ categories:
 
 Вы можете научиться видеть мир так (и аналогично для психологии; и социологии; и экономики):
 
-[![](/images/all_i_see_are_equations-645x1024.png)]((http://abstrusegoose.com/275)
+[![this is how scientists see the world](../../images/all_i_see_are_equations.png)](http://abstrusegoose.com/275)
 
 ...но это не обязывает обсчитывать весь мир по формулам от первых принципов. Если вы округлите пи до 3, а число секунд в сутках до 100000, ничего страшного не случится.
 

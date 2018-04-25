@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Вячеслав Матюхин',
     siteUrl: 'https://berekuk.ru',
-    description: 'Вячеслав Матюхин. Прикладная рациональность: блог, коучинг, движение lesswrong.ru.',
+    description:
+      'Вячеслав Матюхин. Прикладная рациональность: блог, коучинг, движение lesswrong.ru.',
     keywords: 'lesswrong, рациональность, кочерга, коучинг',
   },
   plugins: [
@@ -14,7 +15,28 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 600,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-styled-components',
     {
