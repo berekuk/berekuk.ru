@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Helmet from "react-helmet";
 
 import Disqus from 'disqus-react';
 import styled from 'styled-components';
@@ -21,6 +22,8 @@ export default function Template({ data, pathContext }) {
   const { frontmatter, html } = markdownRemark;
   const { prev, next } = pathContext;
 
+  const metadata = data.site.siteMetadata;
+
   const disqusConfig = {
     url: `${data.site.siteMetadata.siteUrl}/${frontmatter.path}`,
     identifier: frontmatter.path,
@@ -30,6 +33,7 @@ export default function Template({ data, pathContext }) {
   return (
     <div>
       {frontmatter.title && <h1>{frontmatter.title}</h1>}
+      <Helmet title={`${frontmatter.title} | ${metadata.title}`} />
       <Time>{frontmatter.date}</Time>
       <div dangerouslySetInnerHTML={{ __html: html }} />
 
