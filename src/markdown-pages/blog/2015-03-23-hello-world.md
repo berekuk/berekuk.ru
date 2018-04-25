@@ -3,6 +3,7 @@ author: berekuk
 comments: true
 date: 2015-03-23 17:47:00+00:00
 layout: post
+link: https://blog.berekuk.ru/2015/03/23/hello-world/
 path: /blog/2015/03/23/hello-world/
 slug: hello-world
 title: Здравствуй, мир

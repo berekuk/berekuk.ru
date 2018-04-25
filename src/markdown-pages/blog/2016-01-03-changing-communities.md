@@ -1,5 +1,6 @@
 ---
 date: 2016-01-01T20:18:16.000Z
+link: https://blog.berekuk.ru/2016/01/01/%D0%9A%D0%B0%D0%BA-%D0%BC%D0%B5%D0%BD%D1%8F%D1%82%D1%8C-%D0%BB%D1%8E%D0%B4%D0%B5%D0%B9-%D0%B8-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0/
 path: /blog/2016/01/01/changing-communities/
 title: Как менять людей и сообщества
 categories:

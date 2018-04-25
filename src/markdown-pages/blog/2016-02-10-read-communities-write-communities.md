@@ -1,5 +1,6 @@
 ---
 date: 2016-02-10T16:52:35.000Z
+link: https://blog.berekuk.ru/2016/02/10/read-communities-write-communities/
 path: /blog/2016/02/10/read-communities-write-communities/
 title: Сообщества читающие и пишущие
 categories:

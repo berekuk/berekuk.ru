@@ -1,5 +1,6 @@
 ---
 date: 2016-11-29T23:33:11.000Z
+link: https://blog.berekuk.ru/2016/11/30/sex-kills-maybe/
 path: /blog/2016/11/30/sex-kills-maybe/
 title: Секс убивает (с какой-то вероятностью)
 categories:
