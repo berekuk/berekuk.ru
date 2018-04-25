@@ -3,6 +3,7 @@ backend:
   repo: berekuk/berekuk.ru
 
 media_folder: src/images
+public_folder: /images
 
 collections:
   - name: blog
