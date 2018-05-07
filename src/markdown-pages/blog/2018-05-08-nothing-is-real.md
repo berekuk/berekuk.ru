@@ -1,6 +1,6 @@
 ---
-date: '2018-05-08'
-path: nothing-is-real
+date: 2018-05-08
+path: /blog/2018/05/08/nothing-is-real/
 title: Ничего не существует
 categories:
   - rationality
