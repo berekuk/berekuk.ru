@@ -10,6 +10,7 @@ body {
 .page-container {
   max-width: 750px;
   margin: 0 auto;
+  padding: 0 10px;
   margin-bottom: 80px;
   line-height: 25px;
 }
