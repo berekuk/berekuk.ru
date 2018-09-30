@@ -83,12 +83,16 @@ const Navigation = () => (
   </NavList>
 );
 
+const Avatar = () => (
+  <Link to="/">
+    <img src={avatar} alt="аватарка" style={{ display: 'block' }} />
+  </Link>
+);
+
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderEl>
-      <Link to="/">
-        <img src={avatar} alt="аватарка" />
-      </Link>
+      <Avatar />
       <Navigation />
     </HeaderEl>
     <PrettyHr />
