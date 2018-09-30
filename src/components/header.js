@@ -38,19 +38,19 @@ const NavList = styled.ul`
   }
 
   & > * + * {
-  margin-left: 10px;
+    margin-left: 10px;
   }
 
   a {
-  text-decoration: none;
-  padding: 2px 4px;
-  font-weight: bold;
-  color: #666;
+    text-decoration: none;
+    padding: 2px 4px;
+    font-weight: bold;
+    color: #666;
   }
 
   a:hover {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
   }
 `;
 
@@ -60,28 +60,35 @@ const PrettyHr = styled.hr`
   border: 0;
   margin: 0 auto;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 `;
 
 const Navigation = () => (
   <NavList>
-    {
-      [
-        {title: 'Вячеслав Матюхин', link: '/'},
-        {title: 'Блог', link: '/blog'},
-        {title: 'Коучинг', link: '/coaching'},
-        {title: 'Обо мне', link: '/about'},
-      ].map(e => (
-        <li key={e.link}><Link to={e.link}>{e.title}</Link></li>
-      ))
-    }
+    {[
+      { title: 'Вячеслав Матюхин', link: '/' },
+      { title: 'Блог', link: '/blog' },
+      { title: 'Коучинг', link: '/coaching' },
+      { title: 'Обо мне', link: '/about' },
+    ].map(e => (
+      <li key={e.link}>
+        <Link to={e.link}>{e.title}</Link>
+      </li>
+    ))}
   </NavList>
 );
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderEl>
-      <img src={avatar} alt="аватарка" />
+      <Link to="/">
+        <img src={avatar} alt="аватарка" />
+      </Link>
       <Navigation />
     </HeaderEl>
     <PrettyHr />
