@@ -62,9 +62,8 @@ const PrettyHr = styled.hr`
   height: 1px;
   background-image: -webkit-linear-gradient(
     left,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05)
   );
 `;
 
