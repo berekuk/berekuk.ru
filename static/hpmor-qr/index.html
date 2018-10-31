@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instascan</title>
+    <script type="text/javascript" src="instascan.min.js"></script>
+    <style>
+     body {
+       margin: 0;
+       padding: 0;
+     }
+     #overlay {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       font-size: 10vh;
+       background-color: rgba(255, 255, 255, 0.5);
+       text-align: center;
+       padding-top: 30vh;
+     }
+     #preview {
+       width: 100%;
+       height: 100vh;
+     }
+    </style>
+  </head>
+  <body>
+    <div>
+      <video id="preview"></video>
+      <div id="overlay">done!</div>
+    </div>
+    <script type="text/javascript">
+     function getOverlay() {
+       return document.getElementById('overlay');
+     }
+     function hideOverlay() {
+       getOverlay().style.visibility = 'hidden';
+     }
+     function showOverlay() {
+       getOverlay().style.visibility = 'visible';
+     }
+
+     hideOverlay();
+     let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+     scanner.addListener('scan', function (content) {
+       console.log(content);
+       getOverlay().textContent = content;
+       showOverlay();
+       window.setTimeout(hideOverlay, 1000);
+     });
+     Instascan.Camera.getCameras().then(function (cameras) {
+       if (cameras.length > 0) {
+         scanner.start(cameras[0]);
+       } else {
+         console.error('No cameras found.');
+       }
+     }).catch(function (e) {
+       console.error(e);
+     });
+    </script>
+  </body>
+</html>
