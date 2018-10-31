@@ -57,7 +57,7 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-typography',
+    // 'gatsby-plugin-typography',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-feed',
