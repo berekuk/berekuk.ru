@@ -16,7 +16,7 @@ path: /about
 
 **2015–...**
 
-Открыл [Клуб Кочерга](https://kocherga-club.ru) вместе с [Пион Гайбарян](https://vk.com/piongaybaryan).
+Открыл [Клуб Кочерга](https://kocherga-club.ru) вместе с [Пион Медведевой](https://vk.com/prapion_me).
 
 Читаю лекции, веду воркшопы, управляю бизнесом. Всё ещё пишу код.
 
