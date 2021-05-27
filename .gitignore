@@ -1,8 +1,7 @@
-# Project dependencies
 .cache
-node_modules
-yarn-error.log
+/node_modules
+/.next
 
-# Build directory
-/public
 .DS_Store
+
+/*.code-workspace
