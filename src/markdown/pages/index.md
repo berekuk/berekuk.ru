@@ -6,13 +6,9 @@ path: /
 
 ## [Центр рациональности Кочерга](https://kocherga-club.ru)
 
-Управляю бизнесом, веду воркшопы, распространяю рациональность.
+Веду мероприятия, развиваю сообщество, распространяю рациональность.
 
 Подробности, например, в [этом посте](https://www.lesswrong.com/posts/WmfapdnpFfHWzkdXY/rationalist-community-hub-in-moscow-3-years-retrospective) (2018, English) и [этом интервью](https://smartia.me/article/ultimaratio/) (2015).
-
-## [LessWrong.ru](https://lesswrong.ru)
-
-Координирую русскоязычное сообщество, разрабатываю сайт и вики.
 
 ## [Блог](/blog)
 

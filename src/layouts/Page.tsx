@@ -27,8 +27,10 @@ export const Layout: React.FC<Props> = ({
         />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <Header />
-      <div className="px-4 py-16 max-w-screen-md mx-auto">{children}</div>
+      <div className="px-4 max-w-screen-md mx-auto">
+        <Header />
+        <div className="py-16">{children}</div>
+      </div>
     </div>
   );
 };

@@ -1,20 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+const MenuLink: React.FC<{ href: string }> = ({ href, children }) => (
+  <Link href={href} passHref>
+    <a className="block px-1 py-1 text-xs sm:text-xl text-gray-500 font-bold hover:text-black no-underline">
+      {children}
+    </a>
+  </Link>
+);
+
 const Navigation: React.FC = () => (
   <ul className="flex space-x-2.5">
     {[
-      { title: 'Вячеслав Матюхин', link: '/' },
       { title: 'Блог', link: '/blog' },
       { title: 'Коучинг', link: '/coaching' },
       { title: 'Обо мне', link: '/about' },
     ].map(e => (
       <li key={e.link}>
-        <Link href={e.link} passHref>
-          <a className="block px-1 py-0.5 text-xs sm:text-xl text-gray-500 font-bold hover:bg-black hover:text-white no-underline">
-            {e.title}
-          </a>
-        </Link>
+        <MenuLink href={e.link}>{e.title}</MenuLink>
       </li>
     ))}
   </ul>
@@ -36,9 +39,12 @@ const Avatar: React.FC = () => (
 );
 
 export const Header: React.FC = () => (
-  <header className="flex flex-col max-w-3xl mx-auto">
-    <div className="flex items-center justify-center">
-      <Avatar />
+  <header className="flex flex-col max-w-3xl">
+    <div className="flex items-center justify-between">
+      <div className="flex items-center">
+        <Avatar />
+        <MenuLink href="/">Вячеслав Матюхин</MenuLink>
+      </div>
       <Navigation />
     </div>
     <hr className="h-1 border-gray-200" />
