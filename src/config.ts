@@ -1,3 +1,5 @@
+import path from 'path';
+
 export const config = {
   siteMetadata: {
     title: 'Вячеслав Матюхин',
@@ -6,6 +8,6 @@ export const config = {
       'Вячеслав Матюхин. Прикладная рациональность: блог, коучинг, движение lesswrong.ru.',
     keywords: 'lesswrong, рациональность, кочерга, коучинг',
   },
-  markdownRoot: 'src/markdown',
+  markdownRoot: path.join(process.cwd(), 'src/markdown'),
   googleAnalyticsId: 'UA-35747472-4',
 };
