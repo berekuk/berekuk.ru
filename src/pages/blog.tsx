@@ -18,13 +18,14 @@ const RssLink: React.FC = () => (
 const Article: React.FC<{ post: Post }> = ({ post }) => (
   <article>
     <h2 className="text-xl">
-      <Link href={post.link}>
+      <Link href={post.link} passHref>
         <a>{post.title}</a>
       </Link>
     </h2>
-    <div className="mb-2">
+    <div className="mb-4">
       <BlogDate date={parseISO(post.date)} />
     </div>
+
     <p>{post.excerpt}</p>
   </article>
 );
@@ -39,7 +40,7 @@ const BlogIndexPage: NextPage<Props> = ({ posts }) => {
       <div className="mb-8">
         <RssLink />
       </div>
-      <div className="space-y-8">
+      <div className="space-y-12">
         {posts.map(post => (
           <Article post={post} key={post.link} />
         ))}
