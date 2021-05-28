@@ -1,14 +1,16 @@
 ---
 path: /about
 ---
+
 # Обо мне
+
 ## Контакты
 
-* [vk](https://vk.com/berekuk)
-* [facebook](https://facebook.com/berekuk)
-* [telegram](https://t.me/berekuk)
-* [e-mail](mailto:me@berekuk.ru)
-* я часто читаю и пишу в [slack-чате lesswrong.ru](https://lesswrong.ru/slack)
+- [Telegram](https://t.me/berekuk) — проще всего писать сюда
+- [VK](https://vk.com/berekuk), [Facebook](https://facebook.com/berekuk) — несколько лет назад я перестал писать в соцсети, но у меня всё ещё есть публичные профили
+- [me@berekuk.ru](mailto:me@berekuk.ru) — почта
+  - про Кочергу можно писать на [slava@kocherga-club.ru](mailto:slava@kocherga-club.ru)
+- я часто читаю и пишу в [чатах Кочерги](https://kocherga-club.ru/community/chats)
 
 Я зарегистрирован как [ИП](https://elba.kontur.ru/card/kocherga).
 
@@ -16,19 +18,21 @@ path: /about
 
 **2015–...**
 
-Открыл [Клуб Кочерга](https://kocherga-club.ru) вместе с [Пион Медведевой](https://vk.com/prapion_me).
+Открыл [Центр рациональности Кочерга](https://kocherga-club.ru) вместе с [Пион Медведевой](https://prapion.me/). (Пион через пару лет перестала заниматься Кочергой и начала заниматься своими проектами).
 
-Читаю лекции, веду воркшопы, управляю бизнесом. Всё ещё пишу код.
+Читал лекции, вёл воркшопы, управлял бизнесом, писал код.
+
+Кочерга поначалу была нестандартным интеллектуальным антикафе в Москве, чуть позже стала одновременно образовательным центром, потом, с началом пандемии, преобразовалась в онлайн-сообщество.
 
 **2013–2015**
 
-Переходный период. Увольнялся, возвращался, сменил несколько команд в Яндексе, делал стартап [questhub.io](https://github.com/berekuk/questhub). С января 2013 пришёл в [LessWrong](https://lesswrong.ru).
+Переходный период. Увольнялся, возвращался, сменил несколько команд в Яндексе, делал стартап [questhub.io](https://github.com/berekuk/questhub). С января 2013 пришёл в русскоязычную тусовку [LessWrong](https://lesswrong.ru), втянулся в организацию московских встреч LessWrong-сообщества, и захотел посвящать больше времени рациональности.
 
 **2006–2013**
 
 Яндекс, команда разработки blogs.yandex.ru.
 
-Участвовал в опенсорс-сообществе: [Ubic](https://github.com/berekuk/Ubic), [блог](http://blogs.perl.org/users/vyacheslav_matjukhin/).
+Участвовал в опенсорс-сообществе: [Ubic](https://github.com/berekuk/Ubic), [старый блог](http://blogs.perl.org/users/vyacheslav_matjukhin/).
 
 **2000–2006**
 
@@ -36,4 +40,6 @@ path: /about
 
 ## Хотите дать мне денег?
 
-[PayPal](https://www.paypal.me/berekuk/1000rub)
+Вот: [PayPal](https://www.paypal.me/berekuk/1000rub).
+
+Хотите дать денег Кочерге? Тогда [Patreon](https://kocherga-club.ru/patreon).
