@@ -1,6 +1,6 @@
 {
   "functions": {
-    "**": {
+    "src/pages/rss.xml.tsx": {
       "includeFiles": "src/markdown/**"
     }
   }
