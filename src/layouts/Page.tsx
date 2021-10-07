@@ -8,16 +8,12 @@ type Props = {
   header?: boolean;
 };
 
-export const Layout: React.FC<Props> = ({
-  title = config.siteMetadata.title,
-  header = true,
-  children,
-}) => {
+export const Layout: React.FC<Props> = ({ children, title, header = true }) => {
   const metadata = config.siteMetadata;
   return (
     <div>
       <Head>
-        <title>{title}</title>
+        <title>{title || config.siteMetadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

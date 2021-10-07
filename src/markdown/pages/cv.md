@@ -1,6 +1,7 @@
 ---
 path: /cv
 header: false
+title: Vyacheslav Matyuhin - CV
 ---
 
 # Vyacheslav Matyuhin
