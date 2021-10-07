@@ -5,10 +5,12 @@ import { config } from '../config';
 
 type Props = {
   title?: string;
+  header?: boolean;
 };
 
 export const Layout: React.FC<Props> = ({
   title = config.siteMetadata.title,
+  header = true,
   children,
 }) => {
   const metadata = config.siteMetadata;
@@ -28,7 +30,7 @@ export const Layout: React.FC<Props> = ({
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <div className="px-4 max-w-screen-md mx-auto">
-        <Header />
+        {header && <Header />}
         <div className="py-16">{children}</div>
       </div>
     </div>

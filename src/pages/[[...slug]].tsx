@@ -11,13 +11,14 @@ import Page from '../layouts/Page';
 
 type Props = {
   html: string;
+  header?: boolean;
 };
 
 const markdownPagesRoot = `${config.markdownRoot}/pages`;
 
-const MarkdownPage: NextPage<Props> = ({ html }) => {
+const MarkdownPage: NextPage<Props> = ({ html, header = true }) => {
   return (
-    <Page>
+    <Page header={header}>
       <article
         className="prose prose-blue"
         dangerouslySetInnerHTML={{ __html: html }}
@@ -45,6 +46,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   return {
     props: {
       html,
+      header: content.data.header ?? true,
     },
   };
 };
